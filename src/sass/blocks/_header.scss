@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+
+  &__top {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img__logo {
+    width: 185px;
+    height: 48px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+    opacity: 0.7;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .phone__number {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #212121;
+      opacity: 0.7;
+    }
+
+    .btn-light {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+}

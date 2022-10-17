@@ -1,0 +1,60 @@
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  color: $white;
+
+  &-light {
+    border: 1px solid #FF5900;
+    padding: 13px 28px;
+    background-color: transparent;
+    color: $orange;
+    transition: all .2s;
+
+    &:hover {
+      background-color: #CA4600;
+      color: $white;
+      border: 1px solid #CA4600;
+    }
+  }
+
+  &-big {
+    padding: 16px 40px;
+    border: 1px solid #FFFFFF;
+    font-size: 18px;
+  }
+
+  &-orange {
+    border: 1px solid $orange;
+    background-color: $orange;
+    transition: all .2s;
+
+    &:hover {
+      background-color: #CA4600;
+      border: 1px solid #CA4600;
+    }
+  }
+
+  &-blur {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2.5px);
+    transition: all .2s;
+
+
+    &:hover {
+      color: $orange;
+      border: 1px solid $orange;
+      background: transparent;
+      backdrop-filter: blur(0);
+    }
+  }
+}
+
+.header_btn-phone {
+  stroke: $orange;
+
+  &:hover {
+    stroke: $white;
+  }
+}
