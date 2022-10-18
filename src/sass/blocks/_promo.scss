@@ -2,10 +2,9 @@
   background: url('/img/main_bg.jpg') center (center / cover) no-repeat;
 
   &_wrapp {
-    min-height: 716px;
+    min-height: 708px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
   }
 
   &__main {
@@ -15,7 +14,9 @@
   &__title {
     font-weight: 700;
     font-size: 68px;
+    line-height: 73px;
     color: $white;
+    margin-top: 165px;
   }
 
   &__description {
@@ -30,6 +31,5 @@
     display: flex;
     gap: 30px;
   }
-
 
 }

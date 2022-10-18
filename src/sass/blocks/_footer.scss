@@ -2,18 +2,15 @@
   background-color: $gray;
 
   &_wrapp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    min-height: 533px;
 
     .footer_nav {
-      min-height: 533px;
-      padding: 100px 0 80px 0;
+      padding: 100px 0 55px 0;
       display: flex;
       gap: 160px;
 
       .footer__item-address {
-        width: 200px;
+        width: 205px;
 
         address {
           margin-bottom: 0;
@@ -21,7 +18,7 @@
 
         .footer-city {
           margin-top: 57px;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
 
           a {
             text-decoration: underline;
@@ -48,7 +45,8 @@
         .requisites {
           display: flex;
           flex-direction: column;
-          margin-top: 12px;
+          padding-left: 4px;
+          margin-top: 19px;
         }
 
         .social {
@@ -79,18 +77,19 @@
       .footer__list {
         display: flex;
         flex-direction: row;
-        gap: 107px;
+        gap: 115px;
 
         .footer__item {
           .footer__links {
             list-style-type: none;
-            margin-top: 24px;
+            margin-top: 23px;
 
             .footer_link a {
               font-weight: 500;
-              font-size: 14px;
+              font-size: 13px;
               line-height: 170%;
               color: $white;
+              letter-spacing: 0;
             }
           }
         }

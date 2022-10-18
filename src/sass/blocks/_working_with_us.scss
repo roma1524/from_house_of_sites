@@ -5,7 +5,7 @@
     .working_nav-list {
       display: grid;
       grid-template-columns: repeat(5, 240px);
-      grid-template-rows: 90px;
+      grid-template-rows: 88px;
       margin-bottom: 0;
       list-style-type: none;
 
@@ -50,7 +50,7 @@
 
         .tabs_wrapp {
           width: 720px;
-          padding: 40px 50px 60px 40px;
+          padding: 38px 0px 27px 46px;
 
           font-weight: 500;
           font-size: 14px;
@@ -59,6 +59,7 @@
 
           ul {
             list-style-type: none;
+            margin-bottom: 0;
           }
 
           .working_with_us-item {
@@ -79,9 +80,9 @@
         }
 
         .working_with_us_descr-img {
-          width: 480px;
+          max-width: 480px;
           display: flex;
-          justify-content: center;
+          justify-content: space-between;
         }
 
       }

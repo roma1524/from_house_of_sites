@@ -1,7 +1,7 @@
 @import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
-* {
+*, *:before, *:after {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   margin: 0;
@@ -19,7 +19,7 @@ body {
 }
 
 .mb_120 {
-  margin-bottom: 120px;
+  margin-bottom: 111px;
 }
 
 

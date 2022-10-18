@@ -2,17 +2,19 @@
 
   .packages_list {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: minmax(487px, auto);
+    grid-template-columns: repeat(3, 358px);
+    grid-template-rows: minmax(483px, auto);
     grid-auto-rows: minmax(487px, auto);
-    justify-content: space-between;
+    grid-column-gap: 59px;
 
     .package-bg1 {
       background: url('/img/cards/card_item1.jpg') center (center / cover) no-repeat;
     }
+
     .package-bg2 {
       background: url('/img/cards/card_item2.jpg') center (center / cover) no-repeat;
     }
+
     .package-bg3 {
       background: url('/img/cards/card_item3.jpg') center (center / cover) no-repeat;
     }
@@ -20,8 +22,8 @@
     .package__item {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      padding: 40px 32px;
+      //gap: 20px;
+      padding: 40px 34px;
 
       &-header {
         font-weight: 700;
@@ -39,12 +41,22 @@
         color: $white;
       }
 
+      &-title {
+        margin-top: 20px;
+      }
+
+      .discount {
+        margin-top: 27px;
+        margin-bottom: 35px;
+      }
+
       &-descr {
         font-weight: 500;
         font-size: 14px;
         line-height: 140%;
         color: $white;
         opacity: 0.5;
+        margin-top: 20px;
       }
 
       &-descr, &-title {
@@ -53,6 +65,7 @@
       }
     }
   }
+
   .bold {
     font-weight: 800;
     font-size: 18px;

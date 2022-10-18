@@ -62,13 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------------------- Search panel ----------------------
 
-  const searchBtn = document.querySelector('.search-link');
-  // searchPanel = document.querySelector('search_panel');
+  const searchBtn = document.querySelector('.search-icon'),
+    searchPanel = document.querySelector('.search_panel');
 
   searchBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
-    document.querySelector('.search_panel').classList.toggle('show_panel');
+    if (event.target.parentNode == searchBtn) {
+      searchPanel.classList.toggle('show_panel');
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.code === 'Escape' && modalWindow.classList.contains('show')) {
+      closeModalWindow();
+    }
+    if (event.code === 'Escape' && searchPanel.classList.contains('show_panel')) {
+      searchPanel.classList.remove('show_panel');
+    }
   })
 
 })
