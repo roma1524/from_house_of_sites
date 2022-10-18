@@ -3,6 +3,9 @@
 
   &_wrapp {
     min-height: 533px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .footer_nav {
       padding: 100px 0 55px 0;

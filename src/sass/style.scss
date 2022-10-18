@@ -16,12 +16,12 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  outline: 1px solid blue;
 }
 
-.mb_120 {
+.mb_111 {
   margin-bottom: 111px;
 }
-
 
 @import "base/variables";
 
@@ -35,3 +35,4 @@ body {
 @import "blocks/working_with_us";
 @import "blocks/footer";
 @import "blocks/modal";
+@import "base/media";

@@ -12,7 +12,6 @@
   .img__logo {
     width: 185px;
     height: 48px;
-
     margin-right: 45px;
 
     img {
@@ -25,8 +24,7 @@
   &__title {
     font-weight: 400;
     font-size: 14px;
-    color: #212121;
-    opacity: 0.7;
+    color: rgba(33, 33, 33, .7);
   }
 
   &__phone {
@@ -38,11 +36,10 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 20px;
-      color: #212121;
-      opacity: 0.7;
+      color: rgba(33, 33, 33, .7);
     }
 
-    .btn-light {
+    .header_btn-phone {
       display: flex;
       align-items: center;
       gap: 8px;
