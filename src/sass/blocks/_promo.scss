@@ -1,5 +1,5 @@
 .promo {
-  background: url('/img/main_bg.jpg') center (center / cover) no-repeat;
+  background: url('../img/main_bg.jpg') center (center / cover) no-repeat;
 
   &_wrapp {
     min-height: 708px;
@@ -34,7 +34,7 @@
 
   .hamburger {
     position: absolute;
-    top: 12px;
+    top: 16px;
     right: 13px;
     width: 30px;
     height: 18px;

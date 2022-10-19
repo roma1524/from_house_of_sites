@@ -282,11 +282,21 @@
       padding: 16px 20px;
       font-size: 14px;
     }
+
+    &-light {
+      padding: 13px 20px;
+    }
   }
   .header {
     &__phone {
+      gap: 20px;
+
+      .phone__number {
+        font-size: 14px;
+      }
+
       .header_btn-phone {
-        span {
+        .header_btn-img {
           display: none;
         }
       }
@@ -432,14 +442,12 @@
     margin-bottom: 20px;
 
     &__top {
-      padding: 10px 0;
+      padding-top: 10px;
       flex-direction: column;
       gap: 15px;
     }
 
     &__phone {
-      gap: 10px;
-
       .phone__number {
         font-size: 15px;
         width: 150px;
@@ -450,13 +458,6 @@
         display: flex;
         justify-content: center;
 
-        .header_btn-img {
-          display: none;
-        }
-
-        span {
-          display: block;
-        }
       }
     }
   }
@@ -466,6 +467,7 @@
     }
   }
   .promo {
+
     &_wrapp {
       min-height: 420px;
     }
@@ -475,13 +477,13 @@
     }
 
     &__title {
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 25px;
       line-height: 35px;
     }
 
     &__description {
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .btns__block {
@@ -566,6 +568,7 @@
   .modal {
     &__dialog {
       max-width: 90%;
+
       .modal__content {
         padding: 30px 20px;
 

@@ -5,6 +5,10 @@
   border-radius: 30px;
   color: $white;
 
+  &:focus {
+    outline: none;
+  }
+
   &-light {
     border: 1px solid #FF5900;
     padding: 13px 28px;
