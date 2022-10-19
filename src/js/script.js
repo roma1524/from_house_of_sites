@@ -1,5 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ------------------------ Menu ------------------------
+
+  const hamburgerBtn = document.querySelector('.hamburger'),
+    menuList = document.querySelector('.menu'),
+    closeMenuBtn = document.querySelector('[data-menu-close]');
+
+  hamburgerBtn.addEventListener('click', () => {
+    menuList.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  })
+
+  menuList.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if (target.classList.contains('active')) {
+      target.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    if (target.classList.contains('close_menu')) {
+      menuList.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  })
+
 
   // ---------------------- Show tabs ----------------------
 
@@ -79,6 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (event.code === 'Escape' && searchPanel.classList.contains('show_panel')) {
       searchPanel.classList.remove('show_panel');
+    }
+    if (event.code === 'Escape' && menuList.classList.contains('active')) {
+      menuList.classList.remove('active');
     }
   })
 

@@ -97,9 +97,6 @@
           }
         }
 
-        .ft1 {
-          width: 205px;
-        }
 
         .ft2 {
           width: 210px;
@@ -114,7 +111,7 @@
 
 
     .copywriter {
-      height: 50px;
+      min-height: 50px;
       display: flex;
       align-items: center;
       justify-content: space-between;

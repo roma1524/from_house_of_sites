@@ -16,7 +16,6 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  outline: 1px solid blue;
 }
 
 .mb_111 {
@@ -27,6 +26,7 @@ body {
 
 @import "blocks/header";
 @import "blocks/nav";
+@import "blocks/menu";
 @import "blocks/btns";
 @import "blocks/promo";
 @import "blocks/title";

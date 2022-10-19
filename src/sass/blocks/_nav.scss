@@ -75,8 +75,23 @@
     .filter_link {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 16px 16px;
       border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+
+      .best_choice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        width: 36px;
+        height: 16px;
+        font-weight: 500;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: $orange;
+        clip-path: polygon(29.82% 0.00%, 100.00% 0.00%, 100.00% 100%, 30.86% 100%, 0.00% 51.95%);
+      }
 
       .details_hover {
         font-weight: 500;
@@ -98,6 +113,7 @@
         }
       }
     }
+
   }
 
   .search-link {

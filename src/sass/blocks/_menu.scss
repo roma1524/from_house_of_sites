@@ -1,0 +1,65 @@
+.menu {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(35, 35, 35, 0.4);
+
+  &_wrapp {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .95);
+  }
+
+  .close_menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    top: 10px;
+    right: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  &__list {
+    width: 100%;
+    padding: 30px 20px;
+    list-style-type: none;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgba(33, 33, 33, .3);
+
+    &-a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: #212121;
+      transition: all .2s;
+
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: $orange;
+      }
+    }
+
+  }
+}
+
+.active {
+  display: block;
+}

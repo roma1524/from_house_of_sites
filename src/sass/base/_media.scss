@@ -173,12 +173,11 @@
     }
   }
   .nav {
-    &__link {
-      display: none;
-    }
+    display: none;
   }
   .promo {
     &_wrapp {
+      position: relative;
       min-height: 600px;
       justify-content: flex-start;
     }
@@ -193,6 +192,12 @@
       gap: 0;
       justify-content: space-around;
       margin-top: 100px;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
   .digital__packages {
@@ -287,6 +292,11 @@
       }
     }
   }
+  .menu {
+    &_wrapp {
+      width: 40%;
+    }
+  }
   .promo {
     &_wrapp {
       min-height: 500px;
@@ -312,11 +322,263 @@
       grid-column-gap: 30px;
     }
   }
+
+  .reasons {
+    &__list {
+      grid-template-columns: repeat(2, 260px);
+      grid-template-rows: repeat(3, minmax(160px, auto));
+      grid-row-gap: 20px;
+    }
+
+    &__item {
+      padding: 15px 10px;
+      justify-content: unset;
+      gap: 15px;
+
+      &-descr {
+        font-size: 13px;
+        line-height: 140%;
+      }
+    }
+  }
+  .working_with_us {
+    &_wrapp {
+      .working_nav-list {
+        grid-template-columns: 89px 116px 100px 95px 140px;
+
+        .working_nav-item {
+          font-size: 12px;
+          padding: 0 10px;
+
+        }
+      }
+    }
+  }
+
+  .footer_title {
+    font-size: 12px;
+  }
+
+  .footer {
+    &_wrapp {
+      .footer_nav {
+        flex-direction: column;
+        padding: 30px 0 10px 0;
+
+        .footer__item-address {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .footer-city {
+            margin-top: 0;
+            margin-bottom: 10px;
+          }
+
+          .social {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 0;
+            margin-top: 0;
+          }
+        }
+
+        .footer__list {
+          gap: 0;
+          justify-content: space-between;
+
+          .footer__item {
+            .footer__links {
+              .footer_link a {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+
+      .copywriter {
+        &-item, a {
+          font-size: 11px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
   .container {
-    max-width: 100%;
+    max-width: 320px;
     padding: 0 10px;
+  }
+  .mb_111 {
+    margin-bottom: 50px;
+  }
+  .title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .btn {
+    font-size: 14px;
+
+    &-light {
+      padding: 10px;
+    }
+  }
+  .header {
+    margin-bottom: 20px;
+
+    &__top {
+      padding: 10px 0;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__phone {
+      gap: 10px;
+
+      .phone__number {
+        font-size: 15px;
+        width: 150px;
+      }
+
+      .header_btn-phone {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+
+        .header_btn-img {
+          display: none;
+        }
+
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  .menu {
+    &_wrapp {
+      width: 70%;
+    }
+  }
+  .promo {
+    &_wrapp {
+      min-height: 420px;
+    }
+
+    &__main {
+      width: 100%;
+    }
+
+    &__title {
+      margin-top: 40px;
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    &__description {
+      font-size: 13px;
+    }
+
+    .btns__block {
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 52px;
+    }
+  }
+  .digital__packages {
+    .packages_list {
+      grid-template-columns: 300px;
+      grid-template-rows: repeat(3, minmax(450px, auto));
+      grid-auto-rows: minmax(450px, auto);
+    }
+  }
+
+  .reasons {
+    &__list {
+      grid-template-columns: 300px;
+      grid-template-rows: repeat(6, minmax(160px, auto));
+      grid-auto-rows: minmax(160px, auto);
+      justify-content: center;
+      grid-row-gap: 20px;
+    }
+
+    &__item {
+      &-descr {
+        font-size: 15px;
+      }
+    }
+  }
+  .working_with_us {
+    display: none; // Не нашел удачного варианта, посему none
+  }
+  .footer_title {
+    font-size: 14px;
+  }
+  .footer {
+    &_wrapp {
+      .footer_nav {
+        .footer__item-address {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+
+          .social {
+            flex-direction: row;
+            gap: 30px;
+          }
+        }
+
+        .footer__list {
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+
+          .footer__item {
+            width: 80%;
+
+            .footer__links {
+              margin-top: 10px;
+
+              .footer_link a {
+                font-size: 13px;
+              }
+            }
+
+            ul {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copywriter {
+    margin-top: 20px;
+    padding: 10px 0;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .modal {
+    &__dialog {
+      max-width: 90%;
+      .modal__content {
+        padding: 30px 20px;
+
+        .modal__input {
+
+          margin: 20px auto 20px auto;
+          width: 100%;
+          height: 40px;
+
+          font-size: 15px;
+          padding: 0 10px;
+        }
+      }
+    }
   }
 }

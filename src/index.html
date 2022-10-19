@@ -60,7 +60,8 @@
             <div class="header__phone">
                 <a href="tel:+74872792910" class="phone__number">+7 (4872) 79-29-10</a>
                 <button class="btn btn-light header_btn-phone" data-modal>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="header_btn-img" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_48_48)">
                             <path d="M18.3334 14.1V16.6C18.3344 16.8321 18.2868 17.0618 18.1939 17.2744C18.1009 17.4871 17.9645 17.678 17.7935 17.8349C17.6225 17.9918 17.4206 18.1112 17.2007 18.1856C16.9809 18.2599 16.7479 18.2875 16.5168 18.2666C13.9525 17.988 11.4893 17.1118 9.32511 15.7083C7.31163 14.4289 5.60455 12.7218 4.32511 10.7083C2.91676 8.53432 2.04031 6.05914 1.76677 3.48331C1.74595 3.25287 1.77334 3.02061 1.84719 2.80133C1.92105 2.58205 2.03975 2.38055 2.19575 2.20966C2.35174 2.03877 2.54161 1.90224 2.75327 1.80875C2.96492 1.71526 3.19372 1.66686 3.42511 1.66665H5.92511C6.32953 1.66267 6.7216 1.80588 7.02824 2.06959C7.33488 2.3333 7.53517 2.69952 7.59177 3.09998C7.69729 3.90003 7.89298 4.68559 8.17511 5.44165C8.28723 5.73992 8.31149 6.06408 8.24503 6.37571C8.17857 6.68735 8.02416 6.97341 7.80011 7.19998L6.74177 8.25831C7.92807 10.3446 9.65549 12.072 11.7418 13.2583L12.8001 12.2C13.0267 11.9759 13.3127 11.8215 13.6244 11.7551C13.936 11.6886 14.2602 11.7129 14.5584 11.825C15.3145 12.1071 16.1001 12.3028 16.9001 12.4083C17.3049 12.4654 17.6746 12.6693 17.9389 12.9812C18.2032 13.2931 18.3436 13.6913 18.3334 14.1Z"
                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -91,7 +92,7 @@
                         </svg>
                     </summary>
                     <ul class="filter_list">
-                        <li class="filter_link"><a class="details_hover" href="#">Пункт 1</a></li>
+                        <li class="filter_link"><a class="details_hover" href="#">Пункт 1</a> <span class="best_choice">Хит</span></li>
                         <li class="filter_link"><a class="details_hover" href="#">SEO продвижение сайтов в Яндекс</a>
                         </li>
                         <li class="filter_link"><a class="details_hover" href="#">Проведение бизнеса в социальных
@@ -106,8 +107,8 @@
             <li class="nav__link"><a class="hover_class" href="#">Битрикс 24</a></li>
             <li class="nav__link"><a class="hover_class" href="#">О компании</a></li>
             <li class="nav__link"><a class="hover_class" href="#">Отзывы</a></li>
-            <li class="nav__link"><a class="hover_class" href="#">кейсы</a></li>
-            <li class="nav__link"><a class="hover_class" href="#">контакты</a></li>
+            <li class="nav__link"><a class="hover_class" href="#">Кейсы</a></li>
+            <li class="nav__link"><a class="hover_class" href="#">Контакты</a></li>
             <li class="nav__link search-link">
                 <a href="#" class="search-icon">
                     <img src="/icons/header/search.svg" alt="search">
@@ -117,14 +118,24 @@
                 </div>
             </li>
         </ul>
-<!--        <div class="hamburger">-->
-<!--            <span></span>-->
-<!--            <span></span>-->
-<!--            <span></span>-->
-<!--        </div>-->
     </div>
-<!--    <div class="nav__hamburger"></div>-->
 </nav>
+
+<div class="menu">
+<div class="menu_wrapp">
+    <span class="close_menu" data-menu-close>X</span>
+    <ul class="menu__list">
+        <li class="menu__link"><a class="menu__link-a" href="#">Увеличение продаж</a></li>
+        <li class="menu__link"><a class="menu__link-a" href="#">Создание сайтов</a></li>
+        <li class="menu__link"><a class="menu__link-a" href="#">Поддержка</a></li>
+        <li class="menu__link"><a class="menu__link-a" href="#">Битрикс 24</a></li>
+        <li class="menu__link"><a class="menu__link-a" href="#">О компании</a></li>
+        <li class="menu__link"><a class="menu__link-a" href="#">Отзывы</a></li>
+        <li class="menu__link"><a class="menu__link-a" href="#">Кейсы</a></li>
+        <li class="menu__link"><a class="menu__link-a" href="#">Контакты</a></li>
+    </ul>
+</div>
+</div>
 
 <section class="promo mb_111">
     <div class="container">
@@ -140,6 +151,11 @@
                     <button class="btn btn-big btn-blur" data-modal>Заказать экспертный аудит</button>
                 </div>
             </div>
+            <div class="hamburger">
+                <span id="s1"></span>
+                <span id="s2"></span>
+                <span id="s3"></span>
+            </div>
         </div>
     </div>
 </section>
@@ -152,7 +168,8 @@
             <div class="package__item package-bg1">
                 <h4 class="package__item-header">СТАБИЛЬНАЯ ЛИДОГЕНЕРАЦИЯ В КРИЗИС</h4>
                 <div class="package__item-title">SEO-продвижение + <br> Контекстная реклама</div>
-                <div class="package__item-descr">Ищете сплит каналов для <br> стабильного лидгена? <br> Нет ничего надежнее
+                <div class="package__item-descr">Ищете сплит каналов для <br> стабильного лидгена? <br> Нет ничего
+                    надежнее
                     классики!
                 </div>
                 <div class="discount">Специальная скидка до <span class="bold">40%</span> <br> на каждую услугу в пакете
